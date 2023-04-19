@@ -9,7 +9,7 @@ phases:
  install:
     
     commands:
-       - java openjdk8
+       #- java openjdk8
        - apt-get update; apt-get install -y java-17-amazon-corretto-jdk
        - update-alternatives --auto javac
        - update-alternatives --auto java
