@@ -1,5 +1,5 @@
 #buildspec.yml for AWS
-version: 0.1
+version: 0.2
 env:
     #secrets-manager:
       #TOKEN: prod/secret:LOGIN
@@ -7,9 +7,9 @@ env:
       JAVA_HOME: "/usr/lib/jvm/java-17-amazon-corretto/"  
 phases:
  install:
-   runtime-versions:
-    - java openjdk8
+    
     commands:
+       - java openjdk8
        - apt-get update; apt-get install -y java-17-amazon-corretto-jdk
        - update-alternatives --auto javac
        - update-alternatives --auto java
