@@ -29,7 +29,7 @@ phases:
     commands:
       #- mvn test 
       #- mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=anusmithapatnaik_aws_samplecode
-      - mvn verify sonar:sonar -Dsonar.SONAR_TOKEN=282604792c775273e969bdc1689525324926d2cd -Dsonar.host.url=https://sonarcloud.io -Dsonar.projectKey=anusmithapatnaik_aws_samplecode -Dsonar.organization=awskey
+      - mvn verify sonar:sonar -Dsonar.SONAR_TOKEN=01ec293417fd7d9627f108e056abd42aa69e6102 -Dsonar.host.url=https://sonarcloud.io -Dsonar.projectKey=anusmithapatnaik_aws_samplecode -Dsonar.organization=awskey
       #- mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.projectKey=gcpvulprojectkey -Dsonar.organization=gcpsourcecode
       - sleep 5
       - curl https://sonarcloud.io/api/qualitygates/project_status?projectKey=anusmithapatnaik_aws_samplecode >result.json
