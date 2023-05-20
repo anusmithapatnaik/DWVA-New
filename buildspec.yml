@@ -27,9 +27,9 @@ phases:
       - export PATH=$PATH:/sonar-scanner-3.3.0.1492-linux/bin/
  build:
     commands:
-      #- mvn test 
+      - mvn test 
       #- mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=anusmithapatnaik_aws_samplecode
-      - mvn verify sonar:sonar -Dsonar.login=01ec293417fd7d9627f108e056abd42aa69e6102 -Dsonar.host.url=https://sonarcloud.io -Dsonar.projectKey=anusmithapatnaik_aws_samplecode -Dsonar.organization=awskey
+      - mvn verify sonar:sonar -Dsonar.login=f369b2d37c97d18acfdf87980d02e2d3bb01f656 -Dsonar.host.url=https://sonarcloud.io -Dsonar.projectKey=anusmithapatnaik_aws_samplecode -Dsonar.organization=awskey
       #- mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.projectKey=gcpvulprojectkey -Dsonar.organization=gcpsourcecode
       - sleep 5
       - curl https://sonarcloud.io/api/qualitygates/project_status?projectKey=anusmithapatnaik_aws_samplecode >result.json
