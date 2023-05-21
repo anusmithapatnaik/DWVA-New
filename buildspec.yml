@@ -5,7 +5,7 @@ env:
       #TOKEN: prod/secret:LOGIN
     variables:
       JAVA_HOME: "/usr/lib/jvm/java-17-amazon-corretto/"  
-      SONAR_TOKEN: 172107b6a04708eb3e4322c964713dae281701f5
+      #SONAR_TOKEN: 172107b6a04708eb3e4322c964713dae281701f5
 phases:
   install:
     #runtime-versions:
