@@ -25,7 +25,7 @@ phases:
       - wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.3.0.1492-linux.zip
       - unzip ./sonar-scanner-cli-3.3.0.1492-linux.zip
       - export PATH=$PATH:/sonar-scanner-3.3.0.1492-linux/bin/
- build:
+  build:
    commands:
      - mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=anusmithapatnaik_DWVA-New -Dsonar.organization=awskey -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=28e710bc3e5213b1f71c9a19b8bece047e08e466
       #- mvn test 
