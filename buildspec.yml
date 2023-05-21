@@ -7,15 +7,14 @@ env:
       JAVA_HOME: "/usr/lib/jvm/java-17-amazon-corretto/"  
       SONAR_TOKEN: 28e710bc3e5213b1f71c9a19b8bece047e08e466
 phases:
- install:
+  install:
     #runtime-versions:
       #java: openjdk8
-    commands:
+     commands:
        #- java openjdk8
        - apt-get update; apt-get install -y java-17-amazon-corretto-jdk
        - update-alternatives --auto javac
        - update-alternatives --auto java
-
   pre_build:
     commands:
       - apt-get update
