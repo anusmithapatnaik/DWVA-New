@@ -5,7 +5,7 @@ env:
       #TOKEN: prod/secret:LOGIN
     variables:
       #JAVA_HOME: "/usr/lib/jvm/java-17-amazon-corretto/"  
-      SONAR_TOKEN: 71e481d427f794a0711cec3cf2769ee57f66ffda
+      SONAR_TOKEN: 28e710bc3e5213b1f71c9a19b8bece047e08e466
 phases:
  #install:
     #runtime-versions:
@@ -28,7 +28,7 @@ phases:
       #- export PATH=$PATH:/sonar-scanner-3.3.0.1492-linux/bin/
    build:
      commands:
-       - mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=awsvul-Dsonar.organization=sonarcloud09 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
+       - mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=anusmithapatnaik_DWVA-New -Dsonar.organization=awskey -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
       #- mvn test 
       #- mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=anusmithapatnaik_aws_samplecode
       #- mvn verify sonar:sonar -Dsonar.login=f369b2d37c97d18acfdf87980d02e2d3bb01f656 -Dsonar.host.url=https://sonarcloud.io -Dsonar.projectKey=anusmithapatnaik_aws_samplecode -Dsonar.organization=awskey
